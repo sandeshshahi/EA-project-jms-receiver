@@ -1,8 +1,13 @@
 package edu.miu.ea.sandesh.receiver.entity;
 
-import java.time.LocalDateTime;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
 
+
+@Entity
 public class OrderInfo {
+    @Id
     private Long id;
     private String orderDate;
     private Double totalPrice;
